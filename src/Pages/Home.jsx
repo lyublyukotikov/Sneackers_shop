@@ -12,7 +12,6 @@ function Home({
   onAddtoCurt,
   isLoading,
 }) {
-  
   // рендарим карточки
   const renderItems = () => {
     return (
@@ -27,7 +26,6 @@ function Home({
         {...item}
         onPlus={(obj) => onAddtoCurt(obj)}
         onClickFavorite={(obj) => onAddToFavorite(obj)}
-        
         isLoading={isLoading}
       />
     ));
@@ -40,7 +38,7 @@ function Home({
           {searchValue ? `Поиск по запросу : ${searchValue}` : "Все кроссовки"}
         </h1>
         <div className="search-block d-flex align-center">
-          <img alt="search" src="/img/search.svg" />
+          <img alt="search" src="img/search.svg" />
           <input
             onChange={onChangeSearchInput}
             className="search"
@@ -52,7 +50,7 @@ function Home({
               onClick={() => setSearchValue("")}
               className="clearBtn"
               alt="Remove"
-              src="/img/remove.svg"
+              src="img/remove.svg"
             />
           )}
         </div>
