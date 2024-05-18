@@ -50,7 +50,7 @@ function Home({
               onClick={() => setSearchValue("")}
               className="clearBtn"
               alt="Remove"
-              src="../../img/search.svg"
+              src="img/remove.svg"
             />
           )}
         </div>
